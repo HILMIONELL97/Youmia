@@ -1,0 +1,24 @@
+{
+    "name": "youmia",
+    "version": "1.0.0",
+    "description": "e-commerce Apllication Selon La Fmille MernStack",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git remote add origin https://github.com/HILMIONELL97/Youmia.git"
+    },
+    "keywords": [
+        "e-commerce",
+        "MernStack"
+    ],
+    "author": "HILMIONELL",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^8.2.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.12.2"
+    }
+}
