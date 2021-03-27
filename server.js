@@ -7,6 +7,7 @@ const app = express()
 const port = process.env.PORT
     // Import routes
 const authRoutes = require('./routes/authRoute')
+const userRoutes = require('./routes/userRoute')
 
 // Db conn
 mongoose.connect(process.env.DATABASE, {
@@ -18,6 +19,7 @@ mongoose.connect(process.env.DATABASE, {
     .catch((error) => console.log(error))
 
 app.use('/api', authRoutes)
+app.use('/api/user', userRoutes)
 
 
 app.listen(port, () => { console.log(`Our application is running on port ${port}`) })
