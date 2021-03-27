@@ -15,6 +15,7 @@ const app = express()
 const authRoutes = require('./routes/authRoute')
 const userRoutes = require('./routes/userRoute')
 const categoryRoutes = require('./routes/categoryRoute')
+const productRoutes = require('./routes/productRoute')
 
 // Db conn
 mongoose.connect(process.env.DATABASE, {
@@ -37,6 +38,7 @@ app.use(expressValidator())
 app.use('/api', authRoutes)
 app.use('/api/user', userRoutes)
 app.use('/api/category', categoryRoutes)
+app.use('/api/product', productRoutes)
 
 
 
