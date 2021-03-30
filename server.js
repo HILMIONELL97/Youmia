@@ -28,6 +28,7 @@ mongoose.connect(process.env.DATABASE, {
 
 
 //Middlewares
+
 app.use(express.json())
 app.use(cors())
 app.use(cookieParser())

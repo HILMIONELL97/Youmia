@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/:userId', requireSignIn, isAuth, getOneUser)
 
-// router.put('/:userId', requireSignIn, isAuth, updateOneUser)
+router.put('/:userId', requireSignIn, isAuth, isAdmin, updateOneUser)
 
 router.param('userId', userById)
 
